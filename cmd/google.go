@@ -6,7 +6,7 @@ package cmd
 import (
 	"fmt"
 
-	googleScraper "github.com/gmalfatti/flight-scraper/googleSccraper"
+	googleScraper "github.com/gmalfatti/flight-scraper/googleScraper"
 	"github.com/spf13/cobra"
 )
 
@@ -17,15 +17,14 @@ var googleCmd = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) error {
 		fmt.Printf("google called")
 
-		googleScraper.NewScraper().Info()
-		/*url := "https://www.google.com/travel/flights/search?tfs=CBwQAhojagwIAhIIL20vMDUycDcSCjIwMjMtMDMtMjFyBwgBEgNQT0EaI2oHCAESA1BPQRIKMjAyMy0wMy0zMXIMCAISCC9tLzA1MnA3cAGCAQsI____________AUABSAGYAQE"
+		url := "https://www.google.com/travel/flights/search?tfs=CBwQAhojagwIAhIIL20vMDUycDcSCjIwMjMtMDMtMjFyBwgBEgNQT0EaI2oHCAESA1BPQRIKMjAyMy0wMy0zMXIMCAISCC9tLzA1MnA3cAGCAQsI____________AUABSAGYAQE"
 		scraper := googleScraper.NewScraper()
 		err := scraper.CreateDocFromURL(url)
 		if err != nil {
 			return fmt.Errorf("Error %s", err)
 		}
 
-		fmt.Printf("todo")*/
+		fmt.Printf("todo")
 
 		return nil
 	},

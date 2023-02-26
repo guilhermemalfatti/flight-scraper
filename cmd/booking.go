@@ -17,7 +17,10 @@ var bookingCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("booking called")
 
-		bookingScraper.NewScraper().Info()
+		scraper := bookingScraper.NewScraper()
+
+		scraper.CreateDocFromURL("a")
+
 	},
 }
 
