@@ -1,6 +1,5 @@
 /*
 Copyright © 2023 Guilherme Malfatti guimalfatti76@gmail.com
-
 */
 package main
 
