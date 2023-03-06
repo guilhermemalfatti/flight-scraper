@@ -4,8 +4,6 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
@@ -14,7 +12,6 @@ var scraperCmd = &cobra.Command{
 	Use:   "scraper <command>",
 	Short: "A tool to scraper and filter out data from html page",
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("scraper called \n")
 	},
 }
 

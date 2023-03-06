@@ -19,7 +19,7 @@ var bookingCmd = &cobra.Command{
 
 		scraper := bookingScraper.NewScraper()
 
-		scraper.CreateDocFromURL("a")
+		scraper.CreateDocFromURL("todo")
 
 	},
 }

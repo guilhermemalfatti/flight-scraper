@@ -15,7 +15,6 @@ var googleCmd = &cobra.Command{
 	Use:   "google",
 	Short: "Fetch google flight page and scrape data.",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Printf("google called")
 
 		url := "https://www.google.com/travel/flights/search?tfs=CBwQAhojagwIAhIIL20vMDUycDcSCjIwMjMtMDMtMjFyBwgBEgNQT0EaI2oHCAESA1BPQRIKMjAyMy0wMy0zMXIMCAISCC9tLzA1MnA3cAGCAQsI____________AUABSAGYAQE"
 		scraper := googleScraper.NewScraper()
@@ -24,7 +23,7 @@ var googleCmd = &cobra.Command{
 			return fmt.Errorf("Error %s", err)
 		}
 
-		fmt.Printf("todo")
+		scraper.Info()
 
 		return nil
 	},

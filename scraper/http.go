@@ -9,9 +9,7 @@ const (
 	DefaultHTTPTimeout = time.Second * 10
 )
 
-// ClientConfig represents a client configuration.
 type ClientConfig struct {
-	// Timeout is the timeout value to use for incoming and outgoing requests.
 	Timeout time.Duration
 }
 
